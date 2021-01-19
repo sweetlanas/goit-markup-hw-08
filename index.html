@@ -12,42 +12,55 @@
 <body>
 
     <!-- Шапка -->
-<!-- <header class="header">
+<header class="header">
     <div class="conteiner">
-        <nav class="navigation">
-            <a href="./index.html" class="logo logo-top"><span class="logo-accent">Web</span>Studio</a>
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a href="./index.html" class="nav-list-link current">Студия</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="./portfolio.html" class="nav-list-link">Портфолио</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="" class="nav-list-link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="contacts">
-            <ul class="contacts-list">
-                <li class="contacts-list-item">                    
-                    <a href="mailto:info@devstudio.com" class="contacts-list-link">
-                        <svg class="contacts-list-icon" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="contacts-list-item">
-                    <a href="tel:+380961111111" class="contacts-list-link">
-                        <svg class="contacts-list-icon" width="10" height="16">
-                            <use href="./images/sprite.svg#icon-phone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <a href="./index.html" class="logo logo-top">
+            <span class="logo-accent">Web</span>Studio</a>
+        <button type="button"
+                class="menu-btn"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-burger" href="./images/sprite.svg#burger"></use>
+                <use class="icon-burger-close" href="./images/sprite.svg#burger-close"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu" id="menu-container" data-menu>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="./index.html" class="nav-list-link current">Студия</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./portfolio.html" class="nav-list-link">Портфолио</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="" class="nav-list-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-list-item">
+                        <a href="mailto:info@devstudio.com" class="contacts-list-link">
+                            <svg class="contacts-list-icon" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-list-item">
+                        <a href="tel:+380961111111" class="contacts-list-link">
+                            <svg class="contacts-list-icon" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </div>
-</header> -->
+</header>
 
 <main>
     <h1 class="visually-hidden">Веб-Студия</h1>
