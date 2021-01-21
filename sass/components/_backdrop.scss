@@ -6,7 +6,10 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
+  padding: 93px 15px;
+
   transition: all 250ms linear;
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -16,12 +19,8 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
   padding: 40px;
-  width: 528px;
   min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -62,11 +61,9 @@
 .modal-title {
   display: block;
   margin-bottom: 12px;
+  @include font(700, 20px, 1.15, 0.03em);
 
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
@@ -94,10 +91,8 @@
 
 .modal-form-item {
   margin-bottom: 10px;
+  @include font(400, 12px, 1.167, 0.01em);
 
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
   color: var(--text-color);
 }
 
@@ -127,9 +122,7 @@
   transition: border-color 250ms var(--timing-fn);
 
   &::placeholder {
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.01em;
+    @include font(400, 14px, 1.143, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -141,9 +134,7 @@
   padding-top: 10px;
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+  @include font(400, 12px, 1.167, 0.03em);
   color: var(--text-color);
 
   &::before {
@@ -179,15 +170,39 @@
   margin: 0 auto;
   padding: 10px 55px;
   border: none;
+  @include font(700, 16px, 1.875, 0.06em);
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
   text-align: center;
   color: var(--secondary-color);
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    padding: 40px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal-policy-text {
+    @include font(400, 14px, 1.714, 0.03em);
+  }
 }
