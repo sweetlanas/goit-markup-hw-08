@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,17 +19,17 @@
     <!-- Шапка -->
     <header class="header">
       <div class="conteiner">
-        <a href="./index.html" class="logo logo-top">
+        <a href="./index-de.html" class="logo logo-top">
           <span class="logo-accent">Web</span>Studio</a
         >
-        <button class="btn-language" type="button" onclick="showDe()">
-          DE
+        <button class="btn-language" type="button" onclick="showUk()">
+          UK
           <img
             class="lang-icon"
             width="24"
             height="24"
-            src="./images/languages/de.svg"
-            alt="Стяг Німеччини"
+            src="./images/languages/uk.svg"
+            alt="Стяг України"
           />
         </button>
         <button
@@ -55,13 +55,17 @@
           <nav class="navigation">
             <ul class="nav-list">
               <li class="nav-list-item">
-                <a href="./index.html" class="nav-list-link current">Студія</a>
+                <a href="./index-de.html" class="nav-list-link current"
+                  >Studio</a
+                >
               </li>
               <li class="nav-list-item">
-                <a href="./portfolio.html" class="nav-list-link">Портфоліо</a>
+                <a href="./portfolio-de.html" class="nav-list-link"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav-list-item">
-                <a href="#footer" class="nav-list-link">Контакти</a>
+                <a href="#footer" class="nav-list-link">Kontakte</a>
               </li>
             </ul>
           </nav>
@@ -80,7 +84,7 @@
                   <svg class="contacts-list-icon" width="10" height="16">
                     <use href="./images/sprite.svg#icon-phone"></use>
                   </svg>
-                  +38 096 111 11 11</a
+                  +49 096 111 11 11</a
                 >
               </li>
             </ul>
@@ -90,21 +94,21 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden">Веб-Студія</h1>
+      <h1 class="visually-hidden">Web-Studio</h1>
       <!-- HERO -->
       <section class="hero conteiner">
         <p class="hero-title">
-          ефективні рішення<br />
-          для вашого бізнесу
+          effektive Lösungen<br />
+          für Ihr Unternehmen
         </p>
         <button type="button" class="hero-btn" data-modal-open>
-          замовити послугу
+          Einen Service bestellen
         </button>
       </section>
 
       <!-- Особенности -->
       <section class="features conteiner">
-        <h2 class="visually-hidden">Особливості</h2>
+        <h2 class="visually-hidden">Funktionen</h2>
         <ul class="features-list">
           <li class="features-list-item">
             <div class="features-icon-wrapper">
@@ -112,21 +116,23 @@
                 <use href="./images/sprite.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="features-list-title">Увага до деталей</h3>
+            <h3 class="features-list-title">Aufmerksamkeit fürs Detail</h3>
             <p class="features-list-text">
-                Ідейні міркування, а також початок повсякденної роботи з
-                формування позиції.
+              Weltanschauliche Überlegungen sowie der Beginn der täglichen
+              Arbeit zur Positionsbildung.
             </p>
-            </li>
+          </li>
           <li class="features-list-item">
             <div class="features-icon-wrapper">
               <svg class="features-list-icon" width="70" height="70">
                 <use href="./images/sprite.svg#icon-clock"></use>
               </svg>
             </div>
-            <h3 class="features-list-title">Пунктуальність</h3>
+            <h3 class="features-list-title">Pünktlichkeit</h3>
             <p class="features-list-text">
-              Дотримання графіка є важливим аспектом управління, особливо щодо планування та місця навчання персоналу.
+              Die Einhaltung des Zeitplans ist ein wichtiger Aspekt des
+              Managements, insbesondere hinsichtlich der Planung und des Ortes
+              der Mitarbeiterschulung.
             </p>
           </li>
           <li class="features-list-item">
@@ -135,9 +141,10 @@
                 <use href="./images/sprite.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h3 class="features-list-title">Планування</h3>
+            <h3 class="features-list-title">Planung</h3>
             <p class="features-list-text">
-              Ефективне планування є ключовою складовою успіху у досягненні поставлених цілей.
+              Eine effektive Planung ist eine Schlüsselkomponente für den Erfolg
+              beim Erreichen gesetzter Ziele.
             </p>
           </li>
           <li class="features-list-item">
@@ -146,9 +153,11 @@
                 <use href="./images/sprite.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="features-list-title">Сучасні технології</h3>
+            <h3 class="features-list-title">Moderne Technologie</h3>
             <p class="features-list-text">
-             Використання передових технологій відкриває перед нами неймовірні можливості для перетворення світу та поліпшення якості нашого життя.
+              Der Einsatz fortschrittlicher Technologien eröffnet uns
+              unglaubliche Möglichkeiten, die Welt zu verändern und unsere
+              Lebensqualität zu verbessern.
             </p>
           </li>
         </ul>
@@ -156,7 +165,7 @@
 
       <!-- Чем занимаемся-->
       <section class="services conteiner">
-        <h2 class="services-title">Чим ми займаємося</h2>
+        <h2 class="services-title">Was machen wir?</h2>
         <ul class="services-list">
           <li class="services-list-item">
             <picture class="services-list-picture">
@@ -183,7 +192,7 @@
                 height="294"
               />
             </picture>
-            <div class="services-item-title">Десктопні програми</div>
+            <div class="services-item-title">Desktop-Programme</div>
           </li>
           <li class="services-list-item">
             <picture class="services-list-picture">
@@ -210,7 +219,7 @@
                 height="294"
               />
             </picture>
-            <div class="services-item-title">Мобільні додатки</div>
+            <div class="services-item-title">Mobile Anwendungen</div>
           </li>
           <li class="services-list-item">
             <picture class="services-list-picture">
@@ -237,7 +246,7 @@
                 height="294"
               />
             </picture>
-            <div class="services-item-title">Дизайнерські рішення</div>
+            <div class="services-item-title">Designlösungen</div>
           </li>
         </ul>
       </section>
@@ -245,7 +254,7 @@
       <!-- Наша команда -->
       <section class="team">
         <div class="conteiner">
-          <h2 class="team-title">Наша команда</h2>
+          <h2 class="team-title">Unser Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <picture>
@@ -300,7 +309,7 @@
                   alt="Игорь Демьяненко"
                 />
               </picture>
-              <h3 class="team-name">Ігор Дем'яненко</h3>
+              <h3 class="team-name">Ihor Demjanenko</h3>
               <p class="team-profession">Product Designer</p>
               <ul class="team-social-list">
                 <li class="social-list-item">
@@ -406,7 +415,7 @@
                   alt="Ольга Репина"
                 />
               </picture>
-              <h3 class="team-name">Ольга Рєпіна</h3>
+              <h3 class="team-name">Olga Repina</h3>
               <p class="team-profession">Frontend Developer</p>
               <ul class="team-social-list">
                 <li class="social-list-item">
@@ -512,7 +521,7 @@
                   alt="Николай Тарасов"
                 />
               </picture>
-              <h3 class="team-name">Микола Тарасов</h3>
+              <h3 class="team-name">Mykola Tarasov</h3>
               <p class="team-profession">Marketing</p>
               <ul class="team-social-list">
                 <li class="social-list-item">
@@ -618,7 +627,7 @@
                   alt="Михаил Ермаков"
                 />
               </picture>
-              <h3 class="team-name">Михайло Єрмаков</h3>
+              <h3 class="team-name">Mykhailo Yermakov</h3>
               <p class="team-profession">UI Designer</p>
               <ul class="team-social-list">
                 <li class="social-list-item">
@@ -677,7 +686,7 @@
 
       <!-- Клиенты -->
       <section class="clients conteiner">
-        <h2 class="clients-title">Постійні клієнти</h2>
+        <h2 class="clients-title">Stammkunden</h2>
         <ul class="clients-list">
           <li class="clients-list-item">
             <a class="clients-list-link" href="">
@@ -729,11 +738,11 @@
     <footer class="footer" id="footer">
       <div class="conteiner">
         <div class="footer-left-wrapper">
-          <a href="./index.html" class="logo logo-down"
+          <a href="./index-de.html" class="logo logo-down"
             ><span class="logo-accent">Web</span>Studio</a
           >
           <address class="address">
-            <p class="address-street">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="address-street">Kiew, Lesi Ukrainky Ave. 26</p>
             <ul class="footer-contacts-list">
               <li class="footer-contacts-list-item">
                 <a class="footer-link" href="mailto:info@devstudio.com"
@@ -742,14 +751,14 @@
               </li>
               <li class="footer-contacts-list-item">
                 <a class="footer-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                  >+49 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
         <div class="footer-center-wrapper">
-          <p class="footer-title">приєднуйтесь</p>
+          <p class="footer-title">Machen Sie mit</p>
           <ul class="footer-social-list">
             <li class="footer-social-list-item">
               <a
@@ -802,7 +811,7 @@
           </ul>
         </div>
         <div class="footer-right-wrapper">
-          <p class="footer-title">Підпишіться на розсилку</p>
+          <p class="footer-title">Newsletter abonnieren</p>
           <input
             class="footer-input"
             type="email"
@@ -810,7 +819,7 @@
             placeholder="E-mail"
           />
           <button class="footer-btn" type="button">
-            Підписатися
+            Abonnieren
             <svg class="footer-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
@@ -828,10 +837,12 @@
             <use href="./images/sprite.svg#close-btn"></use>
           </svg>
         </button>
-        <b class="modal-title">Залишіть свої дані, ми вам передзвонимо</b>
+        <b class="modal-title"
+          >Hinterlassen Sie Ihre Daten, wir rufen Sie zurück</b
+        >
         <form class="modal-form" action="#">
-          <label class="modal-form-item">
-            Ім'я
+          <label class="modal-form-item"
+            >Name
             <span class="modal-input-wrapper">
               <input class="modal-form-input" type="text" name="user-name" />
               <svg class="modal-icon" width="18" height="18">
@@ -840,7 +851,7 @@
             </span>
           </label>
           <label class="modal-form-item">
-            Телефон
+            Telefon
             <span class="modal-input-wrapper">
               <input class="modal-form-input" type="tel" name="user-tel" />
               <svg class="modal-icon" width="18" height="18">
@@ -849,7 +860,7 @@
             </span>
           </label>
           <label class="modal-form-item">
-            Пошта
+            E-Mail
             <span class="modal-input-wrapper">
               <input class="modal-form-input" type="email" name="user-email" />
               <svg class="modal-icon" width="18" height="18">
@@ -858,7 +869,7 @@
             </span>
           </label>
           <label class="modal-form-item">
-            Коментар
+            Kommentar
             <textarea
               class="modal-form-comment"
               name="user-message"
@@ -872,16 +883,16 @@
             name="checkbox-input"
           />
           <label class="modal-policy-text" for="user-policy">
-            Погоджуюся з розсилкою та приймаю
-            <a class="modal-policy-link" href="#">Умови договору</a>
+            Ich bin mit der Zusendung einverstanden und akzeptiere
+            <a class="modal-policy-link" href="#">die Vertragsbedingungen</a>
           </label>
-          <button class="modal-btn-submit" type="submit">Відправити</button>
+          <button class="modal-btn-submit" type="submit">Senden</button>
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/burger.js"></script>
-    <script src="./js/language.js"></script>
+    <script src="/js/language.js"></script>
   </body>
 </html>
